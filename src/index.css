@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin: 0;
+  min-height: 100vh;
+  /* Animated gradient background */
+  background: linear-gradient(-45deg, #0f172a, #312e81, #1e1b4b, #4c1d95);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  background-attachment: fixed;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar overrides */
+.navbar {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Card overrides */
+.card {
+  background: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  overflow: hidden;
+}
+.card-header {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 1.5rem;
+}
+.card-header h3 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.card-body {
+  padding: 2rem;
+}
+
+/* Form Controls */
+.form-label {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+.form-control, .form-select {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 0 0.25rem rgba(167, 139, 250, 0.25) !important;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.form-select option {
+  background: #1e1b4b;
+  color: #fff;
+}
+
+/* Button overrides */
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+  border: none !important;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease !important;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+  background: linear-gradient(135deg, #4f46e5, #9333ea) !important;
+}
+
+/* Table overrides */
+.table {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  margin-bottom: 0;
+}
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  color: #fff !important;
+}
+.table-dark {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.table-dark th {
+  color: #a78bfa !important;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+.table-hover tbody tr {
+  transition: all 0.2s ease;
+}
+.table-hover tbody tr:hover > * {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Container spacing */
+.container.mt-4 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}

@@ -1,0 +1,38 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const NavigationBar = () => {
+  return (
+    <div>
+      
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#"></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div className="navbar-nav gap-5">
+        <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+        <Link className="nav-link" to="/ViewBooking">View Booking</Link>
+        <Link className="nav-link" to="/ViewBus">View Bus</Link>
+        <Link className="nav-link" to="/AddBus">Add Bus</Link>
+        <Link className="nav-link" to="/AddUser">Add User</Link>
+        <Link className="nav-link" to="/ViewUser">View User</Link>
+        <Link className="nav-link" to="/AddBooking">Add Booking</Link>
+         
+
+         
+         
+
+        <a className="nav-link disabled" aria-disabled="true"></a>
+      </div>
+    </div>
+  </div>
+</nav>
+        
+    </div>
+  )
+}
+
+export default NavigationBar
