@@ -9,6 +9,8 @@ const AddUser = () => {
     gender: "",
     age: "",
     address: "",
+    createdAt: "",
+
   });
 
   const [message, setMessage] = useState("");
@@ -36,6 +38,8 @@ const AddUser = () => {
           gender: "",
           age: "",
           address: "",
+          createdAt: "",
+
         });
       })
       .catch((error) => {
@@ -135,6 +139,19 @@ const AddUser = () => {
                   required
                 />
               </div>
+              <div className="col-md-6">
+              <label className="form-label">
+                Created At <span className="text-danger">*</span>
+              </label>
+              <input
+                type="date"
+                className="form-control"
+                name="createdAt"
+                value={input.createdAt}
+                onChange={inputHandler}
+                required
+              />
+            </div>
 
               <div className="col-12 text-center mt-3">
                 <button
