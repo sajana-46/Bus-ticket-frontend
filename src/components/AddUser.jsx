@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import NavigationBar from "./NavigationBar";
 
 const AddUser = () => {
   const [input, setInput] = useState({
@@ -53,6 +54,7 @@ const AddUser = () => {
 
   return (
     <>
+      <NavigationBar />
       <div className="container mt-4">
         <div className="card shadow">
           <div className="card-header">
