@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import axios from 'axios'
+import NavigationBar from './Navigationbar';
 
 const Addbus = () => {
     const [input, changeInput] = useState(
@@ -40,6 +41,7 @@ const Addbus = () => {
     };
     return (
         <div>
+            <NavigationBar/>
             
             <div className="container">
                 <div className="row">
