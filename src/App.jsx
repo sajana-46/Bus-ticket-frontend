@@ -6,6 +6,10 @@ import './App.css'
 import Home from './assets/components/Home'
 import Addbus from './components/Addbus'
 import Viewbus from './components/Viewbus'
+import ViewUser from './components/ViewUser'
+import AddUser from './components/AddUser'
+import AddBooking from './components/AddBooking'
+import ViewBookings from './components/ViewBooking'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +19,12 @@ function App() {
     <Home/>
     <Addbus/>
     <Viewbus/>
+    <ViewUser/>
+    <AddUser/>
       
+    <Home/>
+    <AddBooking />
+    <ViewBookings />
     </>
   )
 }
