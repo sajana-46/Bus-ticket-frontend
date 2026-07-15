@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Home from './assets/components/Home'
+import ViewUser from './components/ViewUser'
 import AddUser from './components/AddUser'
 import AddBooking from './components/AddBooking'
 import ViewBookings from './components/ViewBooking'
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <ViewUser/>
     <AddUser/>
       
     <Home/>
