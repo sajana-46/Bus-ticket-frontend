@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import axios from 'axios'
-import NavigationBar from './Navigationbar';
+import NavigationBar from './NavigationBar';
 
 const Addbus = () => {
     const [input, changeInput] = useState(

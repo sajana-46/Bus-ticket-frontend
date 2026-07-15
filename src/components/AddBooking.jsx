@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import NavigationBar from './NavigationBar'
 
 function AddBooking() {
   const [userId, setUserId] = useState('')
@@ -52,6 +53,7 @@ function AddBooking() {
 
   return (
     <div className="container mt-3" style={{ maxWidth: '450px' }}>
+      <NavigationBar />
       <h2>Add New Booking</h2>
       
       {message && <p className="alert alert-info py-2">{message}</p>}
